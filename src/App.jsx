@@ -4,11 +4,14 @@ import SignUp from './pages/SignUp';
 import About from './pages/About';
 import Profile from './pages/Profile';
 import Signin from './pages/Signin';
+import Header from './components/Header';
 
 
 
 export default function App() {
-  return <BrowserRouter> 
+  return <BrowserRouter>
+  {/* Here we added header, because it want to visible in all pages. */}
+    <Header/> 
     {/* BrowserRouter,Routes,Route--enables to create Routes inside an application */}
     <Routes>
       {/* here path is in "/". So home page is in /*/}
